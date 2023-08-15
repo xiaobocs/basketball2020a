@@ -8,6 +8,8 @@
 #import "ViewController.h"
 #import <mach/mach_time.h>
 
+#import <opencv2/imgproc.hpp>
+
 @interface ViewController ()
 
 @end
@@ -107,16 +109,16 @@ static double machTimeToSecs(uint64_t time)
     int dilation_size = 2;
     cv::Mat element = getStructuringElement(cv::MORPH_RECT, cv::Size(2 * dilation_size + 1, 2 * dilation_size + 1), cv::Point(dilation_size, dilation_size));
     cv::erode(matDiff, matDiff, element);
-    threshold(matDiff, matDiff, 5, 255, CV_THRESH_BINARY);
+    threshold(matDiff, matDiff, 5, 255, cv::THRESH_BINARY);
 
     cv::Mat gray;
-    cvtColor(matDiff, gray, CV_RGB2GRAY);
+    cvtColor(matDiff, gray, cv::COLOR_RGB2GRAY);
     double m = mean(gray)[0];
 
     if (m > 10)
     {
         putText(inputFrame, "Ball in!!!", cv::Point(40, 40),
-        CV_FONT_HERSHEY_COMPLEX, 1, CV_RGB(0, 255, 0), 2);
+                cv::FONT_HERSHEY_COMPLEX, 1, CV_RGB(0, 255, 0), 2);
     }
 
     ballBack.copyTo(inputFrame(cv::Rect(40, 300, rcBallIn.width, rcBallIn.height)));
