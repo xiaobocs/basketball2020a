@@ -8,6 +8,8 @@
 #import "ViewController.h"
 #import <mach/mach_time.h>
 
+#import <opencv2/imgproc.hpp>
+
 @interface ViewController ()
 
 @end

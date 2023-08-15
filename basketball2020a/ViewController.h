@@ -5,11 +5,9 @@
 //  Created by ellen on 2023/8/13.
 //
 
-#import <UIKit/UIKit.h>
-#ifdef __cplusplus
-#import <opencv2/opencv.hpp>
-#endif
-#import <opencv2/highgui/ios.h>
+#import <opencv2/core.hpp>
+
+#import <opencv2/videoio/cap_ios.h>
 //#import "CvEffects/RetroFilter.hpp"
 
 @interface ViewController : UIViewController<CvVideoCameraDelegate> {
