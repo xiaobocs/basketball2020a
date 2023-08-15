@@ -21,6 +21,26 @@ opencv 2.4.13.6
 
 ##待开发
 使用opencv识别篮板和篮框，避免手工调节“识别矩形”
+https://www.coder.work/article/2084553
+opencv - 检测篮球篮球和球跟踪
+https://stackoverflow.com/questions/19046890/detect-basket-ball-hoops-and-ball-tracking
+Detect basket ball Hoops and ball tracking
+Ask Question
+Asked 9 years, 10 months ago
+Modified 3 years, 1 month ago
+Viewed 3k times
+
+https://www.linkedin.com/pulse/basketball-goal-detection-rnn-stephan-janssen
+https://youtu.be/QEaFBtD_M_w
+https://medium.com/swlh/automating-basketball-highlights-with-object-tracking-b134ce9afec2
+https://youtu.be/PVtmK8LmYpA
+https://github.com/Basket-Analytics/BasketTracking
+https://github.com/browlm13/Basketball-Shot-Detection
+https://forum.opencv.org/t/how-to-follow-the-action-on-a-basketball-court/3180
+https://www.mi-research.net/en/article/doi/10.1007/s11633-020-1259-7
+https://www.ijrte.org/wp-content/uploads/papers/v7i4s2/Es2066017519.pdf
+https://gizmodo.com/ball-tracking-basketball-hoop-makes-it-impossible-to-mi-1843391186
+https://www.researchgate.net/publication/234100963_A_real-time_trajectory-based_ball_detection-and-tracking_framework_for_basketball_video
 
 #opencv 2 -> 3
 #import <opencv2/opencv.hpp>
