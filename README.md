@@ -21,3 +21,12 @@ opencv 2.4.13.6
 
 ##待开发
 使用opencv识别篮板和篮框，避免手工调节“识别矩形”
+
+#opencv 2 -> 3
+
+#opencv 3 -> 4
+opencv4与opencv3区别
+   CV_RGB2GRAY -> cv::COLOR_RGB2GRAY
+   CV_THRESH_BINARY -> cv::THRESH_BINARY
+   
+https://edu.csdn.net/skill/opencv/?utm_source=csdn_ai_skill_tree_blog
